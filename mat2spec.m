@@ -9,4 +9,4 @@ function [SMF]=mat2spec(mat,g)
 %
 %	AUTHOR:	D Lantzberg, Nov. 2017
 
-SMF = ffts(mymat2spr(mat).*mymat2spr(Rank1P(fftshift(g))));
+SMF = myffts(mymat2spr(mat).*mymat2spr(Rank1P(fftshift(g))));
